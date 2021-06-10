@@ -1,3 +1,12 @@
+<%# link_toでパスを指定する場合、名前付きヘルパーに当たる
+destroy_user_sessionに_pathを追加することで、リンクのパスを指定できます。%>
+
+<% if user_signed_in? %>
+
+    <%= link_to "サインアウト", destroy_user_session_path, method: :delete %>
+
+<% end %>
+
 <p>仮のトップページ</p>
 
 
