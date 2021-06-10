@@ -1,24 +1,11 @@
-# README
+# railsでインスタ
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* rails -v
+Rails version: 6.0.3.7
 
-Things you may want to cover:
+* rbenv --version
+rbenv 1.1.2
 
-* Ruby version
+* ruby -v
+ruby 2.7.3
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
