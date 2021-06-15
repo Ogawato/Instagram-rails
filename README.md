@@ -16,3 +16,6 @@ yarn add jquery bootstrap@4.5.3 popper.js<br>
 
 4-1 プロフィールページの作成のところで、うまく行かない時、<br>
 migrateのDeviseCreateUsersの ## Trackableの＃を外すとうまくいっ
+
+
+brew install imagemagick
