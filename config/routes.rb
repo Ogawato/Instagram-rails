@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :users, 
     controllers: { registrations: 'registrations' }
 
-  root 'pages#home'
+  root 'posts#index'
 
   get '/users/:id', to: 'users#show', as: 'user'
 
@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   post '/posts', to: 'posts#create'
   post '/posts/:post_id/photos', to: 'photos#create', as: 'post_photos'
 
-  resources :posts, only: %i(new create) do
+  resources :posts, only: %i(new create index) do
     resources :photos, only: %i(create)
   end
   #ネスト（入れ子）にすることで、親子関係をルーティングで表す
