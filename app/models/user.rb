@@ -4,6 +4,8 @@ class User < ApplicationRecord
   #他のモデルとの間に「1対多」のつながりがあることを示す
   #オブジェクトが削除されるときに、関連付けられたオブジェクトのdestroyメソッドが実行
 
+  has_many :likes
+
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
