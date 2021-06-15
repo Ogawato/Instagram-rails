@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   post '/posts', to: 'posts#create'
   post '/posts/:post_id/photos', to: 'photos#create', as: 'post_photos'
 
-  resources :posts, only: %i(new create index) do
+  resources :posts, only: %i(index new create show destroy) do
     resources :photos, only: %i(create)
   end
   #ネスト（入れ子）にすることで、親子関係をルーティングで表す
