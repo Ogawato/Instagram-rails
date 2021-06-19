@@ -19,3 +19,11 @@ migrateのDeviseCreateUsersの ## Trackableの＃を外すとうまくいっ
 
 
 brew install imagemagick
+<br>
+
+nodenvのバージョンはv12.1.0でうまくいった。<br>
+このバージョンがハマらないとwebpackがうまく動作しない。<br>
+https://teratail.com/questions/319620<br>
+https://qiita.com/tonkotsuboy_com/items/5322d226b6783d25b5df<br>
+https://qiita.com/kyosuke5_20/items/eece817eb283fc9d214f<br>
+を参考にバージョンを合わせる。<br>
