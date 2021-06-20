@@ -15,6 +15,8 @@ Rails.application.routes.draw do
     resources :photos, only: %i(create)
 
     resources :likes, only: %i(create destroy)
+
+    resources :comments, only: %i(create destroy)
   end
   #ネスト（入れ子）にすることで、親子関係をルーティングで表す
   #photosに関してはpostsに対して「子」の関係になるので、ネストすることで、どの投稿に紐づくかを明示できる

@@ -10,6 +10,8 @@ class Post < ApplicationRecord
     #投稿が削除されたら、その投稿に紐づくいいねも削除される
     #いいねを取得する時、作られた逆順で取得
 
+    has_many :comments, dependent: :destroy
+
     accepts_nested_attributes_for :photos
 
     def liked_by(user)
